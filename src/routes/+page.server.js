@@ -44,7 +44,7 @@ export const actions = {
     }
     
     // const data = await request.formData();
-    // pushContact(data)
+    pushContact(data)
     // redirect(303, '/faq')
 
   }
