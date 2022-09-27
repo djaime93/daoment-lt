@@ -1,6 +1,6 @@
   <script>
     // import SignUp from "../../components/forms/SignUp.svelte"
-    import RegisterFull from "../../components/forms/RegisterFull.svelte"
+    import RegisterFormFull from "../../components/forms/RegisterFormFull.svelte"
 
     const style = {
         wrapper: "p-6 w-full h-full flex",
@@ -26,7 +26,7 @@
         </a>
         <div class={style.titleText}>Sign Up</div>
         </div>
-        <RegisterFull/>
+        <RegisterFormFull/>
     </div>
     <div class={style.containerRight} style="background-image: url('https://cdn.pixabay.com/photo/2016/08/30/13/23/efaflex-1630741_1280.jpg')">
         <!-- <img class={style.image} src="https://cdn.pixabay.com/photo/2016/08/30/13/23/efaflex-1630741_1280.jpg" alt=""> -->

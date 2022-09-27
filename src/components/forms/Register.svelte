@@ -8,6 +8,8 @@
     import { Client } from "@hubspot/api-client";
     import { enhance } from '$app/forms';
 
+    import RegisterForm from "./RegisterForm.svelte";
+
   </script>
 
 
@@ -28,17 +30,7 @@
             
           </div>
           <div class="text-4xl font-semibold text-daoblue font-reno text-center">Get notifications about our first tokenized property</div>
-              
-              <!-- <form class="w-full flex flex-col sm:flex-row pt-20 justify-center items-center gap-6" on:submit={handleSubmit}> -->
-                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                <script>
-                  hbspt.forms.create({
-                    region: "na1",
-                    portalId: "22731278",
-                    formId: "4264e834-dd9c-4e4e-bbe7-3979b8d32a9f",
-                    version: "V2_PRERELEASE"
-                  });
-                </script>
+          <RegisterForm formId="4264e834-dd9c-4e4e-bbe7-3979b8d32a9f"/>
       </div>
   </div>
 </div>
