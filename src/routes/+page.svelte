@@ -16,7 +16,6 @@
         stepImage: `h-40`,
     }
 
-
 </script>
 
 <div class={style.wrapper}>
@@ -112,5 +111,4 @@
     </div> -->
 
     <Register/>
-    
 </div>

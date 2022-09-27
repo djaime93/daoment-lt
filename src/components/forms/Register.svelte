@@ -8,55 +8,6 @@
     import { Client } from "@hubspot/api-client";
     import { enhance } from '$app/forms';
 
-    // const secret = import.meta.env.VITE_HUBSPOT_API_KEY
-  //   const hubspotClient = new Client({ accessToken: secret,
-  //                                       defaultHeaders: {'Content-Type': 'application/json'}});
-
-  // const pushLead = async (values) => {
-  //     try {
-  //       const docRef = await addDoc(collection(db,'leads'), {
-  //         first: "",
-  //         last: "",
-  //         email: values.email,
-  //         created: serverTimestamp(),
-  //         updated: serverTimestamp(),
-  //         converted: false,
-  //         from: "register"
-  //       })
-  //     } catch (e) {
-  //       console.error("Error adding document: ", e);
-  //     }
-  // }
-
-  // const pushContact = async (values) => {
-  //   const contactObj = {
-  //     properties: {
-  //         // firstname: values.first,
-  //         // lastname: values.last,
-  //         email: values.email
-  //     },
-  //   }
-    
-  //   console.log(hubspotClient)
-
-  //   const createContactResponse = await hubspotClient.crm.contacts.basicApi.create(contactObj)
-  //   console.log(createContactResponse)
-  // }
-
-    const { form, errors, state, handleChange, handleSubmit } = createForm({
-      initialValues: {
-        email: ""
-      },
-      validationSchema: yup.object().shape({
-        email: yup
-          .string()
-          .email()
-          .required()
-      }),
-      onSubmit: values => {
-        goto('/faqs')
-      }
-    });
   </script>
 
 
@@ -79,34 +30,15 @@
           <div class="text-4xl font-semibold text-daoblue font-reno text-center">Get notifications about our first tokenized property</div>
               
               <!-- <form class="w-full flex flex-col sm:flex-row pt-20 justify-center items-center gap-6" on:submit={handleSubmit}> -->
-              <form class="w-full flex flex-col sm:flex-row pt-20 justify-center items-center gap-6" 
-                    method='POST'
-                    on:submit={handleSubmit}
-                    use:enhance
-                    action="/"
-                    >
-
-                <!-- <label class="text-white" for="email">email</label> -->
-                <div class="flex flex-col items-center">
-                  <input
-                  class="rounded-xl focus:border-b focus:outline-none focus:border-daoblue placeholder-daoblue px-10 py-2 text-daoblue"
-                  id="email"
-                  name="email"
-                  placeholder="email"
-                  on:change={handleChange}
-                  on:blur={handleChange}
-                  bind:value={$form.email}
-                />
-                {#if $errors.email}
-                <div class="w-full">
-                  <small class="text-red-400 absolute">*{$errors.email}</small> 
-                </div>
-                {/if}
-                </div>
-
-            
-                <button class="border bg-daoblue text-white hover:text-daoblue hover:bg-white rounded-xl px-4 py-2" type="submit">submit</button>
-              </form>
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                <script>
+                  hbspt.forms.create({
+                    region: "na1",
+                    portalId: "22731278",
+                    formId: "4264e834-dd9c-4e4e-bbe7-3979b8d32a9f",
+                    version: "V2_PRERELEASE"
+                  });
+                </script>
       </div>
   </div>
 </div>

@@ -16,7 +16,7 @@ const hubspotClient = new Client({ accessToken: HUBSPOT_API_KEY });
 
 /** @type {import('./$types').Actions} */
 export const actions = {
-  contactWithName: async ({cookies, request}) => {
+  default: async ({cookies, request}) => {
     // TODO log the user in
     console.log("test_index")
     

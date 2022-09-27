@@ -4,25 +4,6 @@
   import { goto } from '$app/navigation';
 	import { enhance } from "$app/forms";
 
-  const { form, errors, state, handleChange, handleSubmit } = createForm({
-    initialValues: {
-      first: "",
-      last: "",
-      email: "",
-    },
-    validationSchema: yup.object().shape({
-      first: yup.string().required(),
-      last: yup.string().required(),
-      email: yup
-        .string()
-        .email()
-        .required(),
-    }),
-    onSubmit: values => {
-      // pushLead(values)
-        goto('/faqs')
-    }
-  });
 
   const style = {
     form: `flex flex-col py-6 gap-6`,
@@ -32,46 +13,14 @@
   }
 </script>
 
-<!-- <form action="?/contactWithName" class={style.form} on:submit={handleSubmit} use:enhance> -->
-<form class={style.form} on:submit={handleSubmit} use:enhance action="?/contactWithName" >
-  
-  <label for="first">Name</label>
-  <input
-    id="first"
-    name="first"
-    class={style.input}
-    on:change={handleChange}
-    on:blur={handleChange}
-    bind:value={$form.first}
-  />
-  {#if $errors.first}
-    <small>{$errors.first}</small>
-  {/if}
-
-  <label for="last">Last</label>
-  <input
-    id="last"
-    name="last"
-    class={style.input}
-    on:change={handleChange}
-    on:blur={handleChange}
-    bind:value={$form.last}
-  />
-  {#if $errors.last}
-    <small>{$errors.last}</small>
-  {/if}
-  <label for="email">Email</label>
-  <input
-    id="email"
-    name="email"
-    class={style.input}
-    on:change={handleChange}
-    on:blur={handleChange}
-    bind:value={$form.email}
-  />
-  {#if $errors.email}
-    <small>{$errors.email}</small>
-  {/if}
-
-  <button class={style.button} type="submit">submit</button>
-</form>
+<div>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "22731278",
+    formId: "c711fc88-44a1-4fb7-89a3-c6860eb121de",
+    version: "V2_PRERELEASE"
+  });
+</script>
+</div>
