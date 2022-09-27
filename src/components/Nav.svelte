@@ -41,7 +41,7 @@
     </div>
     <div class={style.user}>
         <a class={style.getStartedButton} href="/signup">Get Started</a>
-        <a class={style.signInButton} href="/signup">Sign In</a>
+        <!-- <a class={style.signInButton} href="/signup">Sign In</a> -->
         
         
         <button class={style.mobile} >

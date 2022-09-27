@@ -54,9 +54,6 @@
           .required()
       }),
       onSubmit: values => {
-        // pushLead(values)
-        // pushContact(values)
-        // alert(JSON.stringify(values));
         goto('/faqs')
       }
     });
