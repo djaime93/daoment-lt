@@ -2,46 +2,45 @@
   <script>
     import { createForm } from "svelte-forms-lib";
     import * as yup from "yup";
-    // import { collection, addDoc, doc, serverTimestamp } from "firebase/firestore";
-    // import { db } from "../../firebase";
+    import { collection, addDoc, doc, serverTimestamp } from "firebase/firestore";
+    import { db } from "../../firebase";
     import { goto } from '$app/navigation';
     import { Client } from "@hubspot/api-client";
-    import { enhance } from '$app/forms';
 
     // const secret = import.meta.env.VITE_HUBSPOT_API_KEY
-  //   const hubspotClient = new Client({ accessToken: secret,
-  //                                       defaultHeaders: {'Content-Type': 'application/json'}});
+    const hubspotClient = new Client({ accessToken: secret,
+                                        defaultHeaders: {'Content-Type': 'application/json'}});
 
-  // const pushLead = async (values) => {
-  //     try {
-  //       const docRef = await addDoc(collection(db,'leads'), {
-  //         first: "",
-  //         last: "",
-  //         email: values.email,
-  //         created: serverTimestamp(),
-  //         updated: serverTimestamp(),
-  //         converted: false,
-  //         from: "register"
-  //       })
-  //     } catch (e) {
-  //       console.error("Error adding document: ", e);
-  //     }
-  // }
+  const pushLead = async (values) => {
+      try {
+        const docRef = await addDoc(collection(db,'leads'), {
+          first: "",
+          last: "",
+          email: values.email,
+          created: serverTimestamp(),
+          updated: serverTimestamp(),
+          converted: false,
+          from: "register"
+        })
+      } catch (e) {
+        console.error("Error adding document: ", e);
+      }
+  }
 
-  // const pushContact = async (values) => {
-  //   const contactObj = {
-  //     properties: {
-  //         // firstname: values.first,
-  //         // lastname: values.last,
-  //         email: values.email
-  //     },
-  //   }
+  const pushContact = async (values) => {
+    const contactObj = {
+      properties: {
+          // firstname: values.first,
+          // lastname: values.last,
+          email: values.email
+      },
+    }
     
-  //   console.log(hubspotClient)
+    console.log(hubspotClient)
 
-  //   const createContactResponse = await hubspotClient.crm.contacts.basicApi.create(contactObj)
-  //   console.log(createContactResponse)
-  // }
+    const createContactResponse = await hubspotClient.crm.contacts.basicApi.create(contactObj)
+    console.log(createContactResponse)
+  }
 
     const { form, errors, state, handleChange, handleSubmit } = createForm({
       initialValues: {
@@ -55,9 +54,8 @@
       }),
       onSubmit: values => {
         // pushLead(values)
-        // pushContact(values)
-        // alert(JSON.stringify(values));
-        goto('/faqs')
+        pushContact(values)
+        alert(JSON.stringify(values));
       }
     });
   </script>
@@ -81,13 +79,7 @@
           </div>
           <div class="text-4xl font-semibold text-daoblue font-reno text-center">Get notifications about our first tokenized property</div>
               
-              <!-- <form class="w-full flex flex-col sm:flex-row pt-20 justify-center items-center gap-6" on:submit={handleSubmit}> -->
-              <form class="w-full flex flex-col sm:flex-row pt-20 justify-center items-center gap-6" 
-                    method='POST'
-                    on:submit={handleSubmit}
-                    use:enhance
-                    action="/"
-                    >
+              <form class="w-full flex flex-col sm:flex-row pt-20 justify-center items-center gap-6" on:submit={handleSubmit}>
 
                 <!-- <label class="text-white" for="email">email</label> -->
                 <div class="flex flex-col items-center">

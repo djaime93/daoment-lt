@@ -16,14 +16,7 @@
         stepImage: `h-40`,
     }
 
-    let email
 
-    const handleSubmit = () => {
-        console.log("email: ", email)
-    }
-
-    const secret = import.meta.env.VITE_HUBSPOT_API_KEY
-    console.log(secret)
 </script>
 
 <div class={style.wrapper}>
