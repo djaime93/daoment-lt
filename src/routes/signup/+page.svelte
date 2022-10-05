@@ -7,7 +7,7 @@
         containerLeft: "flex flex-col w-full md:w-1/2 p-6",
         containerRight: "hidden md:block flex w-1/2 rounded-2xl",
         leftarrow: "h-5 w-5",
-        titleItem: `flex items-center`,
+        titleItem: `flex items-center pb-10`,
         titleText: `text-2xl`,
         image: `h-full w-full object-cover shadow-lg`
     }

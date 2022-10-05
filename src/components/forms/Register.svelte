@@ -21,7 +21,7 @@
       <img class="w-full h-full object-cover" src="https://cdn.pixabay.com/photo/2014/08/02/11/40/high-bay-408222_1280.jpg" alt="">
   </div> -->
 
-  <div class="flex relative w-full border-t bg-daogreen py-20">
+  <div class="flex relative w-full border-t bg-daogreen py-10">
       <dir class="absolute -bottom-8 right-8">
           <img class="h-36 hidden sm:block" src="images/blocks/Blanco (1).png" alt="">
       </dir>
@@ -29,7 +29,7 @@
           <div>
             
           </div>
-          <div class="text-4xl font-semibold text-daoblue font-reno text-center">Get notifications about our first tokenized property</div>
+          <div class="text-4xl font-semibold text-daoblue font-reno text-center pb-10">Get notifications about our first tokenized property</div>
           <RegisterForm formId="4264e834-dd9c-4e4e-bbe7-3979b8d32a9f"/>
       </div>
   </div>

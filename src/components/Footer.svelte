@@ -29,7 +29,7 @@
             <div class={style.menuCol}>
                 <div class={style.menuHeading}>Navigation</div>
                 <a class={style.menuItem} href="/">Home</a>
-                <a class={style.menuItem} href="/">About</a>
+                <a class={style.menuItem} href="/">About Us</a>
                 <a class={style.menuItem} href="/">FAQs</a>
             </div>
             <div class={style.menuCol}>
@@ -38,7 +38,8 @@
             </div>
             <div class={style.menuCol}>
                 <div class={style.menuHeading}>Contact Us</div>
-                <a class={style.menuItem} href="/">info@daoment.io</a>
+                <a class={style.menuItem} href="mailto:info@daoment.io">info@daoment.io</a>
+                <a class={style.menuItem} href="tel:+52-81-1911-7718">+52 (81) 1911 7718</a>
             </div>
         </div>
     </div>

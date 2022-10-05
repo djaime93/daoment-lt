@@ -9,13 +9,14 @@
         nav: `flex flex-cols gap-10`,
         
         // navItem: `text-gray-400`,
-        navItem: `text-[#0030C9] hidden md:block`,
+        navItem: `text-[#0030C9] hidden md:block hover:font-bold`,
         
         user: `flex flex-cols gap-2`,
 
         // getStartedButton: `hidden md:block bg-[#071F25] py-3 px-4 rounded-xl text-white font-semibold`, //  bg-[#314BA0] #0026CC #071F25
-        getStartedButton: `hidden md:block bg-daoblue py-3 px-4 rounded-xl text-white font-semibold text-center`, //  bg-[#314BA0] #0026CC #071F25
-        signInButton: `hidden md:block bg-black py-3 px-4 rounded-xl text-white font-semibold text-center`, //  bg-[#314BA0] #0026CC #071F25
+        getStartedButton: `hidden md:block bg-daoblue py-3 px-4 rounded-xl text-white font-semibold text-center border-2 border-daoblue hover:bg-daogreen hover:text-daoblue hover:border-daoblue`, //  bg-[#314BA0] #0026CC #071F25
+        getStartedButton2: `relative -top-1 -left-1 hidden md:block bg-daoblue py-3 px-4 rounded-xl text-white font-semibold text-center before:absolute before:top-1 before:left-1 before:-z-[1] before:h-full before:w-full before:rounded-xl before:border-2 before:border-daoblue before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0`, //  bg-[#314BA0] #0026CC #071F25
+        signInButton: `relative -top-1 -left-1 hidden md:block bg-black py-3 px-4 rounded-xl text-white font-semibold text-center before:absolute before:top-1 before:left-1 before:-z-[1] before:h-full before:w-full before:rounded-xl before:border-2 before:border-black before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0`, //  bg-[#314BA0] #0026CC #071F25
         
         mobile: `md:hidden py-3 px-4 text-[#071F25] font-semibold text-3xl text-daoblue`,
     }
@@ -35,13 +36,13 @@
     </div>
     <div class={style.nav}>
         <a class={style.navItem} href="/">Home</a>
-        <a class={style.navItem} href="/about">About</a>
+        <!-- <a class={style.navItem} href="/about">About</a> -->
         <a class={style.navItem} href="/faqs">FAQs</a>
         <a class={style.navItem} href="/marketplace">Marketplace</a>
     </div>
     <div class={style.user}>
-        <a class={style.getStartedButton} href="/signup">Get Started</a>
-        <!-- <a class={style.signInButton} href="/signup">Sign In</a> -->
+        <a class={style.getStartedButton2} href="/signup">Get Started</a>
+        <a class={style.signInButton} href="/marketplace">Sign In</a>
         
         
         <button class={style.mobile} >

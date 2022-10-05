@@ -26,7 +26,7 @@
             <div class="w-full h-full flex absolute top-0 left-0 justify-center items-start px-4 flex-col">
 
                 <div class="flex w-full"><DaomentReitSvg/></div>
-                <a class="py-3 px-6 ml-8 bg-daoblue text-white font-semibold rounded-lg mt-4" href="/signup">Sign Up</a>
+                <a class="py-3 px-6 ml-8 bg-daoblue text-white font-semibold rounded-lg mt-4 hover:bg-white hover:text-daoblue" href="/signup">Sign Up</a>
             </div>
             <img class="w-full h-full object-cover" src="https://cdn.pixabay.com/photo/2019/08/15/17/56/production-4408573_960_720.jpg" alt="">
         </div>
@@ -61,7 +61,7 @@
 
                 <StepsCard content={{image:"/images/Earn.svg",
                                     title:"Earn",
-                                    info:"Recieve monthly rental distributions and accrue apreciation as the value of the asset goes up over time."}}/>
+                                    info:"Receive monthly rental distributions and accrue apreciation as the value of the asset goes up over time."}}/>
 
                 <StepsCard content={{image:"/images/Trade.svg",
                                     title:"Trade",
