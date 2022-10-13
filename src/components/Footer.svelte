@@ -29,7 +29,7 @@
             <div class={style.menuCol}>
                 <div class={style.menuHeading}>Navigation</div>
                 <a class={style.menuItem} href="/">Home</a>
-                <a class={style.menuItem} href="/">About Us</a>
+                <a class={style.menuItem} href="/about">About Us</a>
                 <a class={style.menuItem} href="/">FAQs</a>
             </div>
             <div class={style.menuCol}>
