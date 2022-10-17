@@ -30,11 +30,11 @@
                 <div class={style.menuHeading}>Navigation</div>
                 <a class={style.menuItem} href="/">Home</a>
                 <a class={style.menuItem} href="/about">About Us</a>
-                <a class={style.menuItem} href="/">FAQs</a>
+                <a class={style.menuItem} href="https://daoment.gitbook.io/copy-of-daoment-faqs/" target="_blank">FAQs</a>
             </div>
             <div class={style.menuCol}>
                 <div class={style.menuHeading}>Services</div>
-                <a class={style.menuItem} href="/">Marketplace</a>
+                <a class={style.menuItem} href="https://platform.daoment.io">Marketplace</a>
             </div>
             <div class={style.menuCol}>
                 <div class={style.menuHeading}>Contact Us</div>

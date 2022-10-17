@@ -1,6 +1,6 @@
 <script>
 	import NavMobileOptions from './NavMobileOptions.svelte';
-    import MobileNav from './MobileNav.svelte';
+	import MobileNav from './MobileNav.svelte';
 
 	const style = {
 		navWrapper: `flex flex-cols px-6 py-2 justify-between items-center sticky top-0 z-10 bg-white`, //border-b-2 border-black
@@ -37,14 +37,16 @@
 	<div class={style.nav}>
 		<a class={style.navItem} href="/">Home</a>
 		<!-- <a class={style.navItem} href="/about">About</a> -->
-		<a class={style.navItem} href="/faqs">FAQs</a>
-		<a class={style.navItem} href="/marketplace">Marketplace</a>
+		<a class={style.navItem} href="https://daoment.gitbook.io/copy-of-daoment-faqs/" target="_blank"
+			>FAQs</a
+		>
+		<a class={style.navItem} href="https://platform.daoment.io">Marketplace</a>
 	</div>
 	<div class={style.user}>
-		<a class={style.getStartedButton2} href="/signup">Get Started</a>
-		<a class={style.signInButton} href="/marketplace">Sign In</a>
+		<a class={style.getStartedButton2} href="https://platform.daoment.io/signup">Get Started</a>
+		<a class={style.signInButton} href="https://platform.daoment.io/login">Sign In</a>
 
-        <MobileNav/>
+		<MobileNav />
 		<!-- <button class={style.mobile}>
 			<img class="h-5 fill-daoblue" src="icons/menu-burger.svg" alt="">
 
