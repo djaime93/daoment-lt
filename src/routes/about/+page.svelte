@@ -13,11 +13,11 @@
 			name: 'Alonso Ayala',
 			text: 'Passionate about making real estate investing easy, transparent, and accessible.'
 		},
-		{
-			image: 'about/Alonso.png',
-			name: 'Alonso Ayala',
-			text: 'Passionate about making real estate investing easy, transparent, and accessible.'
-		}
+		// {
+		// 	image: 'about/Alonso.png',
+		// 	name: 'Alonso Ayala',
+		// 	text: 'Passionate about making real estate investing easy, transparent, and accessible.'
+		// }
 	];
 
 	const values = [
