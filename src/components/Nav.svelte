@@ -34,9 +34,9 @@
 		<a href="/"><img class={style.logo} src="/images/Icono.jpeg" alt="" /></a>
 		<!-- <a href="/"><img class={style.logo} src="/images/IconoNegro.png" alt="" /></a> -->
 	</div>
-	<div class={style.nav}>
+	<!-- <div class={style.nav}>
 		<a class={style.navItem} href="/">Home</a>
-		<!-- <a class={style.navItem} href="/about">About</a> -->
+		<a class={style.navItem} href="/about">About</a>
 		<a class={style.navItem} href="https://daoment.gitbook.io/copy-of-daoment-faqs/" target="_blank"
 			>FAQs</a
 		>
@@ -47,19 +47,6 @@
 		<a class={style.signInButton} href="https://platform.daoment.io/login">Sign In</a>
 
 		<MobileNav />
-		<!-- <button class={style.mobile}>
-			<img class="h-5 fill-daoblue" src="icons/menu-burger.svg" alt="">
 
-			<svg
-				class="h-5 w-5 fill-current"
-				xmlns="http://www.w3.org/2000/svg"
-				viewBox="0 0 512 512"
-				xml:space="preserve"
-			>
-				<path
-					d="M480 224H32c-17.673 0-32 14.327-32 32s14.327 32 32 32h448c17.673 0 32-14.327 32-32s-14.327-32-32-32zM32 138.667h448c17.673 0 32-14.327 32-32s-14.327-32-32-32H32c-17.673 0-32 14.327-32 32s14.327 32 32 32zM480 373.333H32c-17.673 0-32 14.327-32 32s14.327 32 32 32h448c17.673 0 32-14.327 32-32s-14.327-32-32-32z"
-				/>
-			</svg>
-		</button> -->
-	</div>
+	</div> -->
 </div>
