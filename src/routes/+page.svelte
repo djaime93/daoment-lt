@@ -84,7 +84,7 @@
 					content={{
 						image: '/images/Earn.svg',
 						title: 'Earn',
-						info: 'Receive monthly rental distributions and accrue apreciation as the value of the asset goes up over time.'
+						info: 'Receive monthly rental distributions and accrue appreciation as the value of the asset goes up over time.'
 					}}
 				/>
 
