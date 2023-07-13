@@ -21,4 +21,9 @@
         src: url("/fonts/neuemachina/NeueMachina-Regular.otf");
     }
 </style>
+<svelte:head>
+    <title>Daoment</title>
+    <meta name="description" content="Democratized Real Estate Investing">
+    <!-- <meta itemprop="image" content=""> -->
+</svelte:head>
     
